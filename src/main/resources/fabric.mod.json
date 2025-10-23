@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "iot-test-task-by-gureva-anna",
+	"version": "${version}",
+	"name": "Iot Test Task by Gureva Anna",
+	"description": "This is mod about anya looking for a job :) Simple message gui + c2s interaction + db",
+	"authors": [
+		"anya!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/iot-test-task-by-gureva-anna/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.guranya.iottesttask.IotTestTaskByGurevaAnna"
+		],
+		"client": [
+			"com.guranya.iottesttask.IotTestTaskByGurevaAnnaClient"
+		]
+	},
+	"mixins": [
+		"iot-test-task-by-gureva-anna.mixins.json",
+		{
+			"config": "iot-test-task-by-gureva-anna.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

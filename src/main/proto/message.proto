@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.guranya.iottesttask.proto";
+
+option java_multiple_files = false;
+
+message Message {
+  string text = 1;
+}
